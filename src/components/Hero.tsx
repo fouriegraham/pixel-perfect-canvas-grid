@@ -1,51 +1,60 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { ArrowRight } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
+      {/* Background with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/e7c0e53e-2c85-442d-9f13-4b73b3dbf15c.png')",
-          filter: "brightness(0.7)"
+          backgroundImage: "url('/lovable-uploads/082469ce-ab8e-4b78-b11b-437131c286be.png')",
+          backgroundPosition: "center 30%"
         }}
       />
       
-      <div className="container mx-auto px-4 z-10 text-center">
-        <div className="flex flex-col items-center justify-center">
-          <div className="mb-8">
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      
+      <div className="container relative mx-auto px-4 z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-6 md:mb-8 flex justify-center">
             <img 
               src="/lovable-uploads/21f9d330-1ff2-4902-ab28-56db62f6b716.png" 
               alt="BETF Logo" 
-              className="w-40 h-40 md:w-48 md:h-48 mx-auto"
+              className="w-28 h-28 md:w-36 md:h-36"
             />
           </div>
           
-          <div className="text-white max-w-2xl mx-auto">
+          <div className="text-white">
             <h1 className={cn(
-              "text-4xl md:text-5xl lg:text-6xl font-bold mb-6",
+              "text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6",
               "text-transparent bg-clip-text bg-gradient-to-r from-white to-[#d4aa36]"
             )}>
-              Building futures, Managing risks.
+              Expert Building Inspections & Risk Management
             </h1>
-            <p className="text-lg md:text-xl mb-8">
-              Empowering youth in the built environment through education, mentorship, and real-world experiences.
+            
+            <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90 max-w-2xl mx-auto">
+              Professional building assessment services with a focus on safety, compliance, and structural integrity for your construction projects.
             </p>
+            
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="#services" 
-                className="bg-[#d4aa36] hover:bg-[#b38d20] text-[#0a3431] font-bold py-3 px-6 rounded-md transition-colors"
+              <Button 
+                className="bg-[#d4aa36] hover:bg-[#b38d20] text-[#0a3431] font-bold py-6 px-8 rounded-md text-lg"
               >
                 Our Services
-              </a>
-              <a 
-                href="#about" 
-                className="bg-transparent hover:bg-white/10 text-white border-2 border-white py-3 px-6 rounded-md transition-colors"
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                className="bg-transparent hover:bg-white/10 text-white border-2 border-white py-6 px-8 rounded-md text-lg"
               >
-                Learn More
-              </a>
+                Book Inspection
+              </Button>
             </div>
           </div>
         </div>

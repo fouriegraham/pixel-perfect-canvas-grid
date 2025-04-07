@@ -14,8 +14,8 @@ const Hero = () => {
       />
       
       <div className="container mx-auto px-4 z-10 text-center">
-        <div className="flex flex-col md:flex-row items-center justify-center">
-          <div className="mb-8 md:mb-0 md:mr-12">
+        <div className="flex flex-col items-center justify-center">
+          <div className="mb-8">
             <img 
               src="/lovable-uploads/21f9d330-1ff2-4902-ab28-56db62f6b716.png" 
               alt="BETF Logo" 
@@ -23,7 +23,7 @@ const Hero = () => {
             />
           </div>
           
-          <div className="text-white max-w-xl">
+          <div className="text-white max-w-2xl mx-auto">
             <h1 className={cn(
               "text-4xl md:text-5xl lg:text-6xl font-bold mb-6",
               "text-transparent bg-clip-text bg-gradient-to-r from-white to-[#d4aa36]"

@@ -23,9 +23,9 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-6 md:mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/21f9d330-1ff2-4902-ab28-56db62f6b716.png" 
+              src="/lovable-uploads/cb461d4d-6466-448e-9eea-f3b49c2439d0.png" 
               alt="BETF Logo" 
-              className="w-28 h-28 md:w-36 md:h-36"
+              className="w-32 h-32 md:w-40 md:h-40"
             />
           </div>
           

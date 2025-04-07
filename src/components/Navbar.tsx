@@ -11,9 +11,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/21f9d330-1ff2-4902-ab28-56db62f6b716.png" 
+            src="/lovable-uploads/cb461d4d-6466-448e-9eea-f3b49c2439d0.png" 
             alt="BETF Logo" 
-            className="h-14 w-14 md:h-16 md:w-16"
+            className="h-12 w-12 md:h-14 md:w-14"
           />
           <span className="ml-3 text-lg md:text-xl font-semibold">BETF</span>
         </div>
